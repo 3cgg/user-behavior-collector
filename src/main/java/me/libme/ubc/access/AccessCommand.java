@@ -1,6 +1,7 @@
 package me.libme.ubc.access;
 
 import me.libme.kernel._c.json.JJSON;
+import me.libme.ubc.Action;
 import me.libme.ubc.Command;
 import me.libme.ubc.Context;
 import org.slf4j.Logger;
@@ -29,7 +30,7 @@ public class AccessCommand implements Command<AccessAction> {
     }
 
     @Override
-    public boolean test(AccessAction action) {
+    public boolean test(Action action) {
         return action instanceof  AccessAction;
     }
 

@@ -9,7 +9,7 @@ public interface Command<T extends Action> {
     void execute(T action,Context context);
 
 
-    default boolean test(T action){
+    default boolean test(Action action){
         return true;
     }
 
